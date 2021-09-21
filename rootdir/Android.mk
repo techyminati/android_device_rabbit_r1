@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2022 The CipherOS Project
+# Copyright (C) 20201 Lineage-OS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,29 +12,22 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-DEVICE_PATH := device/realme/RMX3242
+LOCAL_PATH := $(call my-dir)
 
-# Boot Animation
-TARGET_SCREEN_HEIGHT := 1080
-TARGET_SCREEN_WIDTH := 720
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.mt6765.rc
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/init.mt6765.rc
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/init
+include $(BUILD_PREBUILT)
 
-# AAPT
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := hdpi
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
-
-# fastbootd
-PRODUCT_PACKAGES += \
-    fastbootd
-
-# The first api level, device has been commercially launched on.
-PRODUCT_SHIPPING_API_LEVEL := 31
-
-# Init
-PRODUCT_PACKAGES += \
-    init.mt6765.rc \
-    fstab.mt6765
-
+include $(CLEAR_VARS)
+LOCAL_MODULE       := fstab.mt6765
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/fstab.mt6765
+LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)
+include $(BUILD_PREBUILT)
