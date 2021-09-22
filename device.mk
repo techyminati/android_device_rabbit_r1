@@ -38,3 +38,7 @@ PRODUCT_PACKAGES += \
     init.mt6765.rc \
     fstab.mt6765
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(DEVICE_PATH)/overlay
+
