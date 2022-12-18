@@ -40,6 +40,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 31
 PRODUCT_PACKAGES += \
     init.mt6765.rc \
     fstab.mt6765
+    init.recovery.mt6765.rc \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
