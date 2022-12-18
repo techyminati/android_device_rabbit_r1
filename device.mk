@@ -56,4 +56,5 @@ PRODUCT_COPY_FILES += \
 
 # System prop
 -include $(DEVICE_PATH)/system_prop.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
