@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cipher_r1.mk
+
+COMMON_LUNCH_CHOICES := \
+    cipher_r1-user \
+    cipher_r1-userdebug \
+    cipher_r1-eng
