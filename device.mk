@@ -109,3 +109,8 @@ PRODUCT_PACKAGES_DEBUG += \
 TARGET_PREBUILT_KERNEL := device/rabbit/r1/prebuilt/kernel
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
+
+# Step Motor
+PRODUCT_PACKAGES += \
+    StepMotorControls
+
