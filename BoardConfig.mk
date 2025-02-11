@@ -41,3 +41,6 @@ TARGET_NO_BOOTLOADER := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := r1,k65v1_64,k65v1_64_bsp
+
+# Build
+BUILD_BROKEN_DUP_RULES := true
