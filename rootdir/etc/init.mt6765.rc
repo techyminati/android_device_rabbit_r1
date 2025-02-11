@@ -7,6 +7,10 @@ on init
     # We only need it to be overridden before things are mounted
     mount none /system/etc/fstab.mt6765 /vendor/etc/fstab.mt6765 bind
 
+on fs
+    wait /dev/block/platform/bootdevice/
+    symlink /dev/block/platform/bootdevice/ /dev/block/bootdevice
+
 on post-fs
     # Unmount the overridden fstab because the SELinux label is incorrect
     # and some MTK daemons can crash because of that
