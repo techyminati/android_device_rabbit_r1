@@ -100,3 +100,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Kernel
+TARGET_PREBUILT_KERNEL := device/rabbit/r1/prebuilt/kernel
+PRODUCT_COPY_FILES += \
+    $(TARGET_PREBUILT_KERNEL):kernel
