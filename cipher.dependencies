@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "github",
+    "repository": "techyminati/alps-4.19",
+    "target_path": "kernel/mediatek/alps-4.19",
+    "revision": "alps-mp-t0.mp1.tc16sp-pr1"
+  },
+]
