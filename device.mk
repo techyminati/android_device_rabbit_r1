@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/realme/RMX3242
+DEVICE_PATH := device/rabbit/r1
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 1080
@@ -28,7 +28,6 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    dtbo \
     product \
     system \
     system_ext \
@@ -44,12 +43,11 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
-# Boot control
+# Boot Control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-mtkimpl.recovery
+    com.android.hardware.boot \
+    android.hardware.boot-service.default_recovery
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -79,7 +77,7 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 31
 # Init
 PRODUCT_PACKAGES += \
     init.mt6765.rc \
-    fstab.mt6765
+    fstab.mt6765 \
     init.recovery.mt6765.rc \
 
 # Overlays
