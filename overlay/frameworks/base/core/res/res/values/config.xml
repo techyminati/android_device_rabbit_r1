@@ -348,4 +348,16 @@
         <item>1,1</item>
         <item>0,1</item>
     </string-array>
+    <!-- Extra configs extracted from rabbitOS -->
+    <!-- Change Power button behaviour -->
+    <integer name="config_longPressOnPowerBehavior">0</integer>
+    <integer name="config_shortPressOnPowerBehavior">0</integer>
+    <bool name="config_disableLockscreenByDefault">true</bool>
+    <bool name="config_cameraDoubleTapPowerGestureEnabled">false</bool>
+    <bool name="config_emergencyGestureEnabled">false</bool>
+    <!-- Default to gesture navigation -->
+    <integer name="config_navBarInteractionMode">2</integer>
+    <!-- Default to night mode -->
+    <integer name="config_defaultNightMode">2</integer>
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
 </resources>
