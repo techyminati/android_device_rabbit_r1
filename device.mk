@@ -122,3 +122,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/keylayout/och1970_holl_key.kl:$(TARGET_COPY_OUT_PRODUCT)/usr/keylayout/och1970_holl_key.kl
