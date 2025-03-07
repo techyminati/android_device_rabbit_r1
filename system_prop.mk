@@ -7,3 +7,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Privapp permissions whitelisting
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
+
+# DPI
+PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=320
