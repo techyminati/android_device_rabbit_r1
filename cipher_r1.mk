@@ -25,6 +25,9 @@ $(call inherit-product, device/rabbit/r1/device.mk)
 # Inherit some common CipherOS stuff.
 $(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 
+# Inherit rabbitOS vendor if exists.
+$(call inherit-product-if-exists, vendor/rabbit/rabbit-common.mk)
+
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
